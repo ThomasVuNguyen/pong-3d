@@ -1,0 +1,6 @@
+gymnasium==0.29.1
+numpy==1.26.4
+torch==2.2.2
+imageio==2.34.0
+imageio-ffmpeg==0.5.1
+

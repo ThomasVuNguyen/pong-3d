@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pong 3D</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  </head>
+  <body>
+    <main class="wrap" aria-label="Pong 3D">
+      <header class="hud" aria-label="Scoreboard">
+        <div class="hud__title">PONG 3D</div>
+        <div class="hud__score" aria-label="Score">
+          <span id="scoreLeft">0</span>
+          <span class="hud__sep">:</span>
+          <span id="scoreRight">0</span>
+        </div>
+        <div class="hud__hint" id="hint">
+          Space: serve • W/S or ↑/↓: move • P: pause • R: restart
+        </div>
+      </header>
+
+      <section class="stage" aria-label="Game stage">
+        <div id="gameContainer" class="game-container"></div>
+        <div class="overlay" id="overlay" aria-live="polite"></div>
+      </section>
+
+      <footer class="footer">
+        <span>3D Pong • Three.js</span>
+        <span class="footer__dot">•</span>
+        <span>First to 11 wins</span>
+      </footer>
+    </main>
+
+    <script src="./game.js"></script>
+  </body>
+</html>
